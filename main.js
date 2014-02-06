@@ -1,5 +1,5 @@
 
-var optimist = require('optimist').argv
+var argv = require('optimist').argv
 var cocaine = require('cocaine')
 
 if(cocaine.spawnedBy()){
