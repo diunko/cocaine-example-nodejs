@@ -40,7 +40,7 @@ client.getServices(['logging', 'geobase', 'langdetect'], function(err, log, geob
   app.get('/geo', function(req, res){
     log.debug('processing /geo handler')
     var ip = req.headers['x-real-ip'] || '1.2.3.4'
-    geobase.region_id(req.headers['x-real-ip'], function(err, region){
+    geobase.region_id(ip, function(err, region){
       if(err){
         log.debug('error looking up region', err.message)
         res.send('error looking up region: ' + err.message)
