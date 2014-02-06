@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "~3.4.8",
-    "cocaine": "~0.3.1-17"
+    "cocaine": "~0.3.1-17",
+    "optimist": "*"
   }
 }
